@@ -1,0 +1,23 @@
+{
+  "name": "localizer",
+  "version": "1.0.0",
+  "description": "localization",
+  "main": "lib/server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vows test/server.js",
+    "build": "node . localizer"
+  },
+  "keywords": [
+    "localization",
+    "l10n"
+  ],
+  "author": "Zibx",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
