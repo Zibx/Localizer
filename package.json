@@ -1,6 +1,6 @@
 {
-  "name": "localizer",
-  "version": "1.0.0",
+  "name": "z-localize",
+  "version": "1.0.1",
   "description": "localization",
   "main": "lib/server.js",
   "directories": {
@@ -31,5 +31,6 @@
   "bugs": {
     "url": "https://github.com/Zibx/Localizer/issues"
   },
-  "homepage": "https://github.com/Zibx/Localizer"
+  "homepage": "https://github.com/Zibx/Localizer",
+  "preferGlobal": "true"
 }
