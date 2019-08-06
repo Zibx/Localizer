@@ -20,5 +20,7 @@
  "reuse.dog.what": "dog",
  "reuse.dog.text": "And DOG died too",
  "cycle": "{{$cycle}}",
+ "condition1": "{{$condition?yep:nope}}",
+ "condition2": "{{$condition?upper:$yep:upper:$no}}",
  "_plural": "plural=(n != 1)"
 });

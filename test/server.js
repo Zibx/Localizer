@@ -101,6 +101,33 @@ vows.describe('Localization').addBatch({
             assert.equal (topic, ' lower:$animal.multiple');
         }
     },
+    conditions: {
+        simpleTrue: {
+            topic: en('condition1', {condition: true}),
+            test: function( topic ){
+                assert.equal (topic, 'yep');
+            }
+        },
+        simpleFalse: {
+            topic: en('condition1', {condition: false}),
+            test: function( topic ){
+                assert.equal (topic, 'nope');
+            }
+        },
+        simpleTrue2: {
+            topic: en('condition1', {condition: 1}),
+            test: function( topic ){
+                assert.equal (topic, 'yep');
+            }
+        },
+        simpleFalse2: {
+            topic: en('condition1', {condition: 0}),
+            test: function( topic ){
+                assert.equal (topic, 'nope');
+            }
+        }
+
+    },
     cycle: {
         cycle: {
             topic: en('cycle',{cycle: 'recursion'}),

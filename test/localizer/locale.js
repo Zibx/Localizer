@@ -69,7 +69,11 @@ module.exports = {
     },
     cycle: {
         en: '{{$cycle}}'
-    }
+    },
+
+    condition1: {en: '{{$condition?yep:nope}}'},
+    condition2: {en: '{{$condition?upper:$yep:upper:$no}}'}
+
 
 
 };

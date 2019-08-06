@@ -1,3 +1,5 @@
+### TODO: rewrite docs with meteor and nonmeteor examples
+
 # Localizer
 ## This project is bringing you one of the best js localization toolset.
 

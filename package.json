@@ -1,6 +1,6 @@
 {
-  "name": "z-localize",
-  "version": "1.0.1",
+  "name": "localize.js",
+  "version": "1.0.2",
   "description": "localization",
   "main": "lib/server.js",
   "directories": {
@@ -12,16 +12,14 @@
   },
   "keywords": [
     "localization",
-    "l10n"
+    "l10n",
+    "meteor"
   ],
   "author": "Zibx",
   "license": "MIT",
   "devDependencies": {
     "chai": "^1.10.0",
-    "mocha": "^2.1.0"
-  },
-  "dependencies": {
-    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
     "vows": "^0.8.1"
   },
   "repository": {
