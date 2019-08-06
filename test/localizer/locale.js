@@ -72,7 +72,8 @@ module.exports = {
     },
 
     condition1: {en: '{{$condition?yep:nope}}'},
-    condition2: {en: '{{$condition?upper:$yep:upper:$no}}'}
+    condition2: {en: '{{$condition?$yep:$no}}'},
+    condition3: {en: '{{$condition?{{$reuse.what}}:$no}}'},
 
 
 

@@ -125,6 +125,32 @@ vows.describe('Localization').addBatch({
             test: function( topic ){
                 assert.equal (topic, 'nope');
             }
+        },
+
+        subsimpleTrue: {
+            topic: en('condition2', {condition: true, yep: 'Agrh'}),
+            test: function( topic ){
+                assert.equal (topic, 'Agrh');
+
+            }
+        },
+        subsimpleFalse: {
+            topic: en('condition2', {condition: false, no: 'nope'}),
+            test: function( topic ){
+                assert.equal (topic, 'nope');
+            }
+        },
+        subsimpleTrue2: {
+            topic: en('condition2', {condition: 1, yep: 'Agrh2'}),
+            test: function( topic ){
+                assert.equal (topic, 'Agrh2');
+            }
+        },
+        subsimpleFalse2: {
+            topic: en('condition2', {condition: 0, no: 'nope'}),
+            test: function( topic ){
+                assert.equal (topic, 'nope');
+            }
         }
 
     },
