@@ -1,5 +1,3 @@
-### TODO: rewrite docs with meteor and nonmeteor examples
-
 # Localizer
 ## This project is bringing you one of the best js localization toolset.
 
@@ -15,6 +13,36 @@
 - Blazingly fast speed. Locale for each language is precompiled and we use code generation for make everything even faster
 - Conditions! So you can do programming while you are doing programming.
 - Relative paths! You can make subnode that use properties of it's parent, so you can make standard text for some dialog greetings once and then - just use 'reuse' feature
+
+### How to use it without meteor
+```js
+// Initialize
+const L = require('localize.js')('en', {
+    greeting: 'Hello, {{$userName}}!',
+    big: 'Hello, {{upper:$userName}}!',
+    fish: 'You ve just catch {{$count}} {{plural:$count,fish,fishes}}',
+    // You have to use correct plural function
+    _plural: "plural=(n != 1)"
+});
+
+// Usage
+
+console.log(L('greeting', {userName: 'Hulio'}));
+// > Hello, Hulio
+
+console.log(L('big', {userName: 'Pedro'}));
+// > Hello, PEDRO!
+
+console.log(L('fish', {count: 1}));
+// > You ve just catch 1 fish!
+
+console.log(L('fish', {count: 3}));
+// > You ve just catch 3 fishes!
+```
+
+### Meteor usage contains much more features
+> Sorry, I have not used meteor for a long time and now I can not remember how to test all features. I would make a reminder to come back and write doc
+
 
 ### Installation
 

@@ -5,7 +5,7 @@ require('..').build(__dirname,'localizer');
 
 global.Localizer = require('..').load(__dirname, 'localizer');
 console.log(Localizer);
-var en = Localizer.get('en' ),
+var en = Localizer.get('en'),
     ru = Localizer.get('ru');
 
 vows.describe('Localization').addBatch({
